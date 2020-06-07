@@ -64,25 +64,25 @@ $KServer2012R2ES = "K2XGM-NMBT3-2R6Q8-WF2FK-P36R2"
 $counter = 0
 
 foreach ($element in $Server2019DC) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -Comments $element -ProductKey $KServer2019DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -ProductKey $KServer2019DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2019ST) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -Comments $element -ProductKey $KServer2019ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -ProductKey $KServer2019ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2019ES) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2019-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -Comments $element -ProductKey $KServer2019DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2019" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2019-AVMA-" + $counter) -ProductKey $KServer2019DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2019\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -90,25 +90,25 @@ foreach ($element in $Server2019ES) {
 $counter = 0
 
 foreach ($element in $Server2016DC) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -Comments $element -ProductKey $KServer2016DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -ProductKey $KServer2016DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2016ST) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -Comments $element -ProductKey $KServer2016ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -ProductKey $KServer2016ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2016ES) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2016-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -Comments $element -ProductKey $KServer2016ES -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2016" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2016-AVMA-" + $counter) -ProductKey $KServer2016ES -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2016\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -116,25 +116,25 @@ foreach ($element in $Server2016ES) {
 $counter = 0
 
 foreach ($element in $Server2012R2DC) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -Comments $element -ProductKey $KServer2012R2DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -ProductKey $KServer2012R2DC -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2012R2ST) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -Comments $element -ProductKey $KServer2012R2ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -ProductKey $KServer2012R2ST -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
 
 foreach ($element in $Server2012R2ES) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " Regular Deployment") -ID ("WS2012R2-RD-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -Comments $element -ProductKey $KServer2012R2ES -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2012 R2" -Template Client.xml -Name ($element + " AVMA Deployment") -ID ("WS2012R2-AVMA-" + $counter) -ProductKey $KServer2012R2ES -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2012 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -142,7 +142,7 @@ foreach ($element in $Server2012R2ES) {
 $counter = 0
 
 foreach ($element in $Windows7) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 7" -Template Client.xml -Name $element -ID ("W7-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows 7\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 7" -Template Client.xml -Name $element -ID ("W7-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows 7\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -150,7 +150,7 @@ foreach ($element in $Windows7) {
 $counter = 0
 
 foreach ($element in $Server2008R2) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2008 R2" -Template Client.xml -Name $element -ID ("WS2008R2-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2008 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows Server 2008 R2" -Template Client.xml -Name $element -ID ("WS2008R2-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows Server 2008 R2\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -158,7 +158,7 @@ foreach ($element in $Server2008R2) {
 $counter = 0
 
 foreach ($element in $Windows8) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 8.1" -Template Client.xml -Name $element -ID ("W8-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows 8.1\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 8.1" -Template Client.xml -Name $element -ID ("W8-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows 8.1\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -166,7 +166,7 @@ foreach ($element in $Windows8) {
 $counter = 0
 
 foreach ($element in $Windows10) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 10" -Template Client.xml -Name $element -ID ("W10-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Windows 10\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Windows 10" -Template Client.xml -Name $element -ID ("W10-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Windows 10\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
@@ -174,7 +174,7 @@ foreach ($element in $Windows10) {
 $counter = 0
 
 foreach ($element in $IPR) {
-    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Insider Previews" -Template Client.xml -Name $element -ID ("IPR-" + $counter) -Comments $element -OperatingSystemPath ("DS001:\Operating Systems\Insider Previews\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
+    Import-MDTTaskSequence -Path "DS001:\Task Sequences\Insider Previews" -Template Client.xml -Name $element -ID ("IPR-" + $counter) -OperatingSystemPath ("DS001:\Operating Systems\Insider Previews\" + $element) -FullName "Administrator" -OrgName "n/a"` -AdminPassword "DefaultAdminAccount!"
 
     $counter += 1
 }
